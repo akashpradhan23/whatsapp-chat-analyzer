@@ -6,7 +6,7 @@ import emoji
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 
-rcParams['font.family'] = 'Segoe UI Emoji'
+
 
 extract = URLExtract()
 
