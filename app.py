@@ -7,12 +7,11 @@ st.set_page_config(
     page_title="WhatsApp Chat Analyzer",
     initial_sidebar_state="expanded"
 )
-st.write("Step 1: App started")
-st.sidebar.title("Whatsapp Chat Analyzer")
-st.write("Step 2: Sidebar created")
 
-uploaded_file = st.sidebar.file_uploader("Choose a file")
-st.write("Step 3: File uploader created")
+st.sidebar.title("Whatsapp Chat Analyzer")
+
+
+
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
