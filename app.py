@@ -2,7 +2,7 @@ import streamlit as st
 import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
-st.write("Step 1: App started")
+
 st.set_page_config(
     page_title="WhatsApp Chat Analyzer",
     initial_sidebar_state="expanded"
