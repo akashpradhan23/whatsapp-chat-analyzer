@@ -2,6 +2,10 @@ import streamlit as st
 import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
+st.set_page_config(
+    page_title="WhatsApp Chat Analyzer",
+    initial_sidebar_state="expanded"
+)
 
 st.sidebar.title("Whatsapp Chat Analyzer")
 
