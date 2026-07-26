@@ -1,27 +1,18 @@
 import streamlit as st
+import preprocessor,helper
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 st.set_page_config(
     page_title="WhatsApp Chat Analyzer",
     initial_sidebar_state="expanded"
 )
 
-st.title("WhatsApp Chat Analyzer")
-st.write("App started")
-
-import preprocessor
-st.write("Preprocessor imported")
-
-import helper
-st.write("Helper imported")
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 st.sidebar.title("Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 
-st.write("Reached here")
+
 
 
 if uploaded_file is not None:
