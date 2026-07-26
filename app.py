@@ -12,6 +12,10 @@ st.sidebar.title("Whatsapp Chat Analyzer")
 
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
+
+st.write("Reached here")
+st.stop()
+
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
