@@ -9,7 +9,7 @@ st.set_page_config(
 )
 st.write("Step 1: App started")
 st.sidebar.title("Whatsapp Chat Analyzer")
-st.write("Step 1: App started")
+st.write("Step 2: Sidebar created")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 st.write("Step 3: File uploader created")
