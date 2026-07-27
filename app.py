@@ -11,6 +11,27 @@ st.set_page_config(
 st.sidebar.title("Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
+if uploaded_file is None:
+    st.markdown("""
+    <h1 style='text-align:center;'>📱 WhatsApp Chat Analyzer</h1>
+    <h3 style='text-align:center;color:gray;'>
+    Upload your exported WhatsApp chat (.txt) from the left sidebar to begin.
+    </h3>
+
+    <hr>
+
+    ### 🚀 Features
+
+    - 📊 Total Messages & Words
+    - 📅 Daily & Monthly Timeline
+    - ☁️ Word Cloud
+    - 😊 Emoji Analysis
+    - 🔗 Shared Links
+    - 📈 Activity Heatmap
+
+    """, unsafe_allow_html=True)
+
+    st.stop()
 
 
 
