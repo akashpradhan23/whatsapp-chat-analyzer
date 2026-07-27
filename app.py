@@ -59,17 +59,15 @@ if uploaded_file is not None:
         col1, col2, col3, col4 = st.columns(4)
 
         with col1:
-            st.header("Total Messages")
-            st.title(num_messages)
+            st.metric("Total Messages", num_messages)
         with col2:
-            st.header("Total Words")
-            st.title(words)
+            st.metric("Total Words", words)
+
         with col3:
-            st.header("Media Shared")
-            st.title(num_media_messages)
+            st.metric("Media Shared", num_media_messages)
+
         with col4:
-            st.header("Links Shared")
-            st.title(num_links)
+            st.metric("Links Shared", num_links)
 
         # monthly timeline
         st.title("Monthly Timeline")
